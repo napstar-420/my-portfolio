@@ -6,7 +6,7 @@
 
 #left_side > *, #right_side > *, #call_to_action {
     opacity: 0;
-    animation:slide-in 3s cubic-bezier(0, 0, 0.2, 1) 6s 1 forwards;
+    animation:slide-in 3s cubic-bezier(0, 0, 0.2, 1) 7s 1 forwards;
 }
 
 @keyframes slide-in {
@@ -70,17 +70,6 @@
     }
 }
 
-#left_side {
-    
-}
-
-#right_side {
-    flex: none;
-    opacity: 0;
-    transition: none;
-    animation: right_animation 2s ease 4s 1 forwards;
-}
-
 .animate_box {
     position: absolute;
     left: 0%;
@@ -97,17 +86,20 @@
     100% {
         width: 100%;
         opacity: 0;
-        
     }
+}
+
+#right_side {
+    flex: 1;
+    background-color: #303030;
+    animation: right_animation 2s ease 4s 1 forwards;
 }
 
 @keyframes right_animation {
     0% {
-        opacity: 0;
-        flex: none;
+        background-color: #303030;
     }
     100% {
-        opacity: 1;
-        flex: 1;
+        background-color: #56FFC2;
     }
 }
