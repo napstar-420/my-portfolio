@@ -8,8 +8,9 @@ module.exports = {
         'mainBlack': '#303030',
       },
       fontFamily: {
-        openSans: ['Open Sans', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif']
+        openSans: 'Open Sans, sans-serif',
+        poppins: 'Poppins, sans-serif',
+        quicksand: 'Quicksand, sans-serif',
       }
     },
   },

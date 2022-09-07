@@ -19,7 +19,7 @@ function AboutMe() {
                         </div>
                     </div>
                     <div className='md:flex justify-between md:w-full md:px-8'>
-                        <p className='text-white text-center tracking-wider font-light my-4 sm:text-lg sm:my-8 md:mr-8 md:text-left max-w-[40em]'>
+                        <p className='text-white text-center tracking-wider font-quicksand font-light my-4 sm:text-lg sm:my-8 md:mr-8 md:text-left max-w-[40em]'>
                             Hi, My name is Zohaib. I am a self taught Frontend Web Developer based in Lahore, PK. I Build websites in React JS along with many other different technologies. As a developer i love solving problems and i have keen eye for the design as well. Also i enjoy learning new things because in this modern era new technologies are being released everyday. As a new Developer i am looking forward to job opportunities where i can polish my skills. 
                         </p>
                         <img src={computer} alt="computer_illustration" className='hidden md:block w-[300px]'/>
@@ -67,14 +67,14 @@ function AboutMe() {
                     <div className='my-14 px-4'>
                         <h2 className='text-mainGreen font-bold font-poppins text-2xl sm:text-3xl'>Skills</h2>
                         <ul className='text-white list-disc px-4 mt-6'>
-                            <li className='font-poppins text-lg sm:text-xl mb-2 md:font-extralight'>Responsive Design</li>
-                            <li className='font-poppins text-lg sm:text-xl mb-2'>Clean Code</li>
-                            <li className='font-poppins text-lg sm:text-xl mb-2'>Building Single Page Applications</li>
-                            <li className='font-poppins text-lg sm:text-xl mb-2'>Resuseable Components</li>
-                            <li className='font-poppins text-lg sm:text-xl mb-2'>Modern Design</li>
-                            <li className='font-poppins text-lg sm:text-xl mb-2'>Working with Api's</li>
-                            <li className='font-poppins text-lg sm:text-xl mb-2'>UI / UX Design</li>
-                            <li className='font-poppins text-lg sm:text-xl mb-2'>Figma, Photoshop, Premiere</li>
+                            <li className='font-quicksand text-lg sm:text-xl mb-2'>Responsive Design</li>
+                            <li className='font-quicksand text-lg sm:text-xl mb-2'>Clean Code</li>
+                            <li className='font-quicksand text-lg sm:text-xl mb-2'>Building Single Page Applications</li>
+                            <li className='font-quicksand text-lg sm:text-xl mb-2'>Resuseable Components</li>
+                            <li className='font-quicksand text-lg sm:text-xl mb-2'>Modern Design</li>
+                            <li className='font-quicksand text-lg sm:text-xl mb-2'>Working with Api's</li>
+                            <li className='font-quicksand text-lg sm:text-xl mb-2'>UI / UX Design</li>
+                            <li className='font-quicksand text-lg sm:text-xl mb-2'>Figma, Photoshop, Premiere</li>
                         </ul>
                     </div>
                     <div className='h-2 w-[50vw] mx-auto bg-mainGreen rounded md:hidden'/>

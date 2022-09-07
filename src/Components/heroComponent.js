@@ -39,8 +39,8 @@ function HeroComponent() {
             <h1 className='text-mainGreen font-black text-3xl sm:text-4xl md:text-5xl mix-blend-difference font-poppins mb-2' id="h_1">Hey, I am Zohaib</h1>
             <h1 className='text-mainGreen font-black text-3xl sm:text-4xl md:text-5xl mix-blend-difference font-poppins' id='h_2'>Frontend Developer</h1>
             <div className='mt-8' id='call_to_action'>
-              <a href="#" className='px-4 sm:px-6 py-1 text-mainBlack font-semibold bg-mainGreen rounded mx-3 text-xl font-poppins hover:bg-transparent hover:text-mainGreen border-[3px] border-mainGreen active:bg-[#404040] transition-all'>Work</a>
-              <a href="#" className='px-4 sm:px-6 py-1 text-mainGreen font-semibold bg-mainBlack rounded mx-1 text-xl font-poppins hover:bg-transparent hover:text-mainBlack border-[3px] border-mainBlack active:bg-[#7cffcf] transition-all'>About</a>
+              <a href="#" className='px-4 sm:px-6 py-1 text-mainBlack font-semibold bg-mainGreen mx-3 text-xl font-poppins hover:bg-transparent hover:text-mainGreen border-[3px] border-mainGreen active:bg-[#404040] transition-all'>Work</a>
+              <a href="#" className='px-4 sm:px-6 py-1 text-mainGreen font-semibold bg-mainBlack mx-1 text-xl font-poppins hover:bg-transparent hover:text-mainBlack border-[3px] border-mainBlack active:bg-[#7cffcf] transition-all'>About</a>
             </div>
           </div>
         </div>
