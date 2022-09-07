@@ -2,7 +2,8 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import HeroComponent from './Components/heroComponent.js';
 import AboutMe from './Components/AboutMe.js';
-import Work from './Components/Work.js'
+import Work from './Components/Work.js';
+import Connect from './Components/Connect.js';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <HeroComponent />
       <AboutMe />
       <Work />
+      <Connect />
     </div>
   )
 }

@@ -11,6 +11,9 @@ module.exports = {
         openSans: 'Open Sans, sans-serif',
         poppins: 'Poppins, sans-serif',
         quicksand: 'Quicksand, sans-serif',
+      },
+      screens: {
+        xs: '420px'
       }
     },
   },

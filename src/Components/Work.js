@@ -65,7 +65,7 @@ const Work = () => {
                 </h2>
                 <div className="md:flex justify-between items-center">
                     <p className="text-white font-quicksand my-4 text-sm sm:text-base max-w-[20em] lg:leading-7">{desc}</p>
-                    <img src={img} alt={name} className="w-[300px] sm:w-[400px] mx-auto md:mx-0 md:scale-125 hover:scale-150 transition-all cursor-crosshair"/>
+                    <img src={img} alt={name} className="w-[300px] sm:w-[400px] mx-auto md:mx-0 lg:scale-125 lg:hover:scale-150 transition-all cursor-crosshair"/>
                 </div>
                 <div className="mt-4 flex flex-wrap">
                   <a
