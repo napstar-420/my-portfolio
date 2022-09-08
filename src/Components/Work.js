@@ -1,9 +1,9 @@
 import React from "react";
-import spicella_burgers from "../Images/spicella_burgers.png";
-import goodwell_outlet from "../Images/goodwell_outlet.png";
-import geo_weather from "../Images/geo_weather.png";
-import random_quote_site from "../Images/random_quote_site.png";
-import spicella_spanish_kitchen from "../Images/spicella_spanish_kitchen.png";
+import spicella_burgers from "../Images/spicella_burgers.webp";
+import goodwell_outlet from "../Images/goodwell_outlet.webp";
+import geo_weather from "../Images/geo_weather.webp";
+import random_quote_site from "../Images/random_quote_site.webp";
+import spicella_spanish_kitchen from "../Images/spicella_spanish_kitchen.webp";
 
 const Work = () => {
   const projects = [
@@ -44,7 +44,7 @@ const Work = () => {
     },
   ];
   return (
-    <section className="py-16">
+    <section className="py-16" id="work">
       <h2 className="text-mainGreen font-poppins font-semibold text-center text-2xl sm:text-3xl px-4">
         Some of my Projects
       </h2>
