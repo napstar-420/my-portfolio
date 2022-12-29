@@ -4,6 +4,12 @@ import goodwell_outlet from "../Images/goodwell_outlet.webp";
 import geo_weather from "../Images/geo_weather.webp";
 import random_quote_site from "../Images/random_quote_site.webp";
 import spicella_spanish_kitchen from "../Images/spicella_spanish_kitchen.webp";
+import etchASketchImg from '../Images/etchasketch.png';
+import signUpPage from '../Images/signuppage.png';
+import ticTacToe from '../Images/tic_tac_toe.png';
+import vuLms from '../Images/vu_lms.png';
+import workDone from '../Images/work_done.png';
+import resumeBuilder from '../Images/resume-builder.png';
 import {AiFillHtml5} from 'react-icons/ai';
 import {FaCss3Alt, FaBootstrap, FaGitAlt, FaGithub} from 'react-icons/fa';
 import {IoLogoJavascript} from 'react-icons/io';
@@ -12,18 +18,18 @@ import {SiTailwindcss, SiSass, SiReact, SiRedux, SiVisualstudiocode, SiReactrout
 const Work = () => {
   const projects = [
     {
-      name: "Spicella Burgers",
-      img: spicella_burgers,
-      desc: "It's a fictional Restaurant website. Which are famous for their burgers. There are total 3 pages (home, menu and reservation). User can see the menu and book a date.",
-      hostedURL: "https://spicella-burgers.netlify.app/",
-      codeURL: "https://github.com/napstar-420/spicella-burgers",
+      name: 'Resume builder',
+      img: resumeBuilder,
+      desc: 'Free online resume builder store user\'s information in firebase and create\'s a resume which user can download as PDF. Currently there are only 2 templates but i have plans for creating more. In order to use this app you need to sign up first.',
+      hostedURL: "https://free-online-resume-builder.netlify.app/",
+      codeURL: "https://github.com/napstar-420/resume-builder"
     },
     {
-      name: "Goodwell Outlet",
-      img: goodwell_outlet,
-      desc: "Goodwell Outlet is a small e-commerce website which sells women, men and kids clothing plus accessories. Although its not a big website you can still add your products to cart and remove them.",
-      hostedURL: "https://goodwell-outlet.netlify.app/",
-      codeURL: "https://github.com/napstar-420/goodwell-outlet",
+      name: 'Work Done Complex Todo App',
+      img: workDone,
+      desc: 'Work Done is a complex todo app that let\'s you organize your tasks in projects. And show you remaining time. You can edit the task later, delete it or set as complete. This website uses Browser storage so you\'re tasks will be saved',
+      hostedURL: "https://workdone-todo.netlify.app",
+      codeURL: "https://github.com/napstar-420/workdone-complex-todo-app"
     },
     {
       name: "Geo Weather",
@@ -33,11 +39,53 @@ const Work = () => {
       codeURL: "https://github.com/napstar-420/weather-app",
     },
     {
+      name: "Goodwell Outlet",
+      img: goodwell_outlet,
+      desc: "Goodwell Outlet is a small e-commerce website which sells women, men and kids clothing plus accessories. Although its not a big website you can still add your products to cart and remove them.",
+      hostedURL: "https://goodwell-outlet.netlify.app/",
+      codeURL: "https://github.com/napstar-420/goodwell-outlet",
+    },
+    {
+      name: 'Sign up Page',
+      img: signUpPage,
+      desc: 'It\'s a simple sign up page but with javascript form validation. Showing that i can handle the form validation on client side to prevent the user from entering wrong information',
+      hostedURL: "https://sign-up-form-napstar.netlify.app/",
+      codeURL: "https://github.com/napstar-420/sign-up-form"
+    },
+    {
+      name: 'VU LMS Redesigned',
+      img: vuLms,
+      desc: 'I always thought that my university learning management system (lms) website. was not properly designed. So i decided to re develop their front page with better design.',
+      hostedURL: "https://vu-lms.netlify.app//",
+      codeURL: "https://github.com/napstar-420/lms-dashboard-redesign"
+    },
+    {
       name: "Random Quote Site",
       img: random_quote_site,
       desc: "Random quote site is a website where you can get thousands of different quotes from famous personalities, and can tweet them right away from the website.",
       hostedURL: "https://random-quotes-dailysite.netlify.app/",
       codeURL: "https://github.com/napstar-420/random-quote-site",
+    },
+    {
+      name: 'Tic Tac Toe',
+      img: ticTacToe,
+      desc: 'A simple 2 player web based tic tac toe game coded in vanilla javascript. I will add an Ai opponent soon.',
+      hostedURL: "https://tictactoe-napstar.netlify.app/",
+      codeURL: "https://github.com/napstar-420/tic-tac-toe"
+    },
+    {
+      name: 'Etch a Sketch',
+      img: etchASketchImg,
+      desc: 'Etch a sketch is fun web game. Created in Javascript. You can change size of grids and color them. There is also a rainbow mode which makes your world colorful.',
+      hostedURL: "https://etch-a-sketch-napstar.netlify.app/",
+      codeURL: "https://github.com/napstar-420/etch-a-sketch"
+    },
+    {
+      name: "Spicella Burgers",
+      img: spicella_burgers,
+      desc: "It's a fictional Restaurant website. Which are famous for their burgers. There are total 3 pages (home, menu and reservation). User can see the menu and book a date.",
+      hostedURL: "https://spicella-burgers.netlify.app/",
+      codeURL: "https://github.com/napstar-420/spicella-burgers",
     },
     {
       name: "Spicella Spanish Kitchen",
