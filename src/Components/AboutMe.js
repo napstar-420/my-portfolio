@@ -9,7 +9,7 @@ import {GoBrowser} from 'react-icons/go';
 export default function AboutMe() {
 
     return (
-        <section className="bg-mainGreen w-screen min-h-screen px-4 grid md:place-items-center py-32 relative" id='about_me'>
+        <section className="bg-mainGreen w-full min-h-screen px-4 grid md:place-items-center py-32 relative" id='about_me'>
             <div className='bg-mainBlack lg:scale-100 2xl:scale-110 w-full md:w-[700px] md:h-auto h-[calc(100%-6rem)] md:grid grid-cols-[auto_1fr] shadow-md shadow-gray-700  rounded-md relative'>
                 <div className={`w-[150px] md:w-[200px] h-[150px] md:h-auto mx-auto md:mx-0 bg-[url('/src/Images/my_pic.jpg')] bg-cover bg-right md:bg-none rounded-full md:rounded-none relative bottom-20 md:static md:bottom-0`}>
                     <img src={myPic} alt='' className='w-full hidden md:block'/>
