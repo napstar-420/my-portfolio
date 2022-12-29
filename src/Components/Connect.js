@@ -17,7 +17,7 @@ const Connect = () => {
             Thanks{" "}
           </p>
           <a
-            href="mailto:zohaibkhan1162002@gmail.com"
+            href="mailto:dev.zohaib.work@gmail.com"
             target="_blank"
             className="flex items-center justify-center bg-mainBlack text-white font-poppins font-medium text-xl px-4 py-1 rounded w-full xs:col-end-2 col-start-1 col-end-3"
             rel="noreferrer"
