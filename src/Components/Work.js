@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import spicella_burgers from "../Images/spicella_burgers.webp";
 import goodwell_outlet from "../Images/goodwell_outlet.webp";
 import geo_weather from "../Images/geo_weather.webp";
@@ -96,13 +96,37 @@ const Work = () => {
     },
   ];
 
+  const head3Ref = useRef(null);
+  const techDivRef = useRef(null);
+
+  const [showHead, setShowHead] = useState(false);
+  const [showTechDiv, setShowTechDiv] = useState(false);
+
+  function onScroll() {
+    const head3Pos = head3Ref.current.getBoundingClientRect().top;
+    const techDivPos = techDivRef.current.getBoundingClientRect().top;
+    const scrollPos = window.scrollY + window.innerHeight - 1500;
+    // HEAD
+    if(head3Pos < scrollPos) setShowHead(true); console.log('SHOWING');
+    if (head3Pos + 100 > scrollPos) setShowHead(false);
+    // Tech DIV
+    if(techDivPos < scrollPos) setShowTechDiv(true);
+    if (techDivPos + 100 > scrollPos) setShowTechDiv(false);
+
+  }
+
+  useLayoutEffect(() => {
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+}, [])
+  
   return (
     <section className='py-32' id='work'>
       <div className='mx-auto max-w-[700px] mb-32 px-4'>
-        <h1 className='text-mainGreen font-poppins font-semibold text-center text-2xl sm:text-3xl px-4 mb-8'>
+        <h1 ref={head3Ref} className={`text-mainGreen font-poppins font-semibold text-center text-2xl sm:text-3xl px-4 mb-8 my-transition relative ${showHead ? 'opacity-100 top-0' : 'opacity-0 top-24'}`}>
           My Technology Stack
         </h1>
-        <div className='grid grid-cols-[repeat(auto-fit,_minmax(150px,1fr))] gap-4'>
+        <div ref={techDivRef} className={`grid grid-cols-[repeat(auto-fit,_minmax(150px,1fr))] gap-4 my-transition relative ${showTechDiv ? 'opacity-100 top-0' : 'opacity-0 top-24'}`}>
           <div className='text-2xl text-white font-poppins font-medium flex flex-col items-center justify-between p-4 shadow shadow-[#202020] rounded transition hover:shadow-mainGreen'>
             <AiFillHtml5 className='text-orange-500 text-8xl mb-1' />
             HTML
@@ -145,7 +169,7 @@ const Work = () => {
           </div>
           <div className='text-2xl text-white font-poppins font-medium flex flex-col items-center justify-between p-4 shadow shadow-[#202020] rounded transition hover:shadow-mainGreen'>
             <FaGithub className='text-black text-8xl mb-1' />
-            Git
+            Github
           </div>
           <div className='text-2xl text-white font-poppins font-medium flex flex-col items-center justify-between p-4 shadow shadow-[#202020] rounded transition hover:shadow-mainGreen'>
             <SiVisualstudiocode className='text-blue-500 text-8xl mb-1' />

@@ -126,5 +126,5 @@ html {
 }
 
 .my-transition {
-    transition: opacity ease-out 2s, top ease-in 2s, transform ease-in-out 200ms;
+    transition: opacity ease-out 2s, top ease-in 2s, transform ease-in-out 200ms, box-shadow ease-in-out 200ms;
 }
