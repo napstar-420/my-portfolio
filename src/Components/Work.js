@@ -121,7 +121,7 @@ const Work = () => {
 }, [])
   
   return (
-    <section className='py-32' id='work'>
+    <section className='py-32'>
       <div className='mx-auto max-w-[700px] mb-32 px-4'>
         <h1 ref={head3Ref} className={`text-mainGreen font-poppins font-semibold text-center text-2xl sm:text-3xl px-4 mb-8 my-transition relative ${showHead ? 'opacity-100 top-0' : 'opacity-0 top-24'}`}>
           My Technology Stack
@@ -177,7 +177,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <h2 className='text-mainGreen font-poppins font-semibold text-center text-2xl sm:text-3xl px-4'>
+      <h2  id='work' className='text-mainGreen font-poppins font-semibold text-center text-2xl sm:text-3xl px-4'>
         Some of my Projects
       </h2>
       <p className='text-white font-openSans text-center text-xs my-4 md:my-8 sm:text-sm max-w-[35em] mx-auto opacity-50 px-4'>
