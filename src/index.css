@@ -124,3 +124,7 @@ html {
     display: flex;
     align-items: center;
 }
+
+.my-transition {
+    transition: opacity ease-out 2s, top ease-in 2s, transform ease-in-out 200ms;
+}
