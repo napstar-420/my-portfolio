@@ -1,9 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import HeroComponent from './Components/heroComponent.js';
-import AboutMe from './Components/AboutMe.js';
-import Work from './Components/Work.js';
-import Connect from './Components/Connect.js';
+import ComingSoon from './Components/ComingSoon';
 
 function App() {
   return (
@@ -18,10 +15,7 @@ function App() {
 function Home() {
   return(
     <div className='bg-mainBlack'>
-      <HeroComponent />
-      <AboutMe />
-      <Work />
-      <Connect />
+      <ComingSoon />
     </div>
   )
 }
